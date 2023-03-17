@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px; /*Largura da borda*/
+            border-style: solid; /*Estilo da borda*/
+            border-color: darkgreen;
+            /*Simplificando a parte da "BORDER" fica:
+            border: 10px solid darkgreen*/
+
+            /*"PADDING" Distancia do conteúdo de dentro em relação a borda.*/
+            padding-top: 10px; /*Cima do padding*/
+            padding-right: 10px; /*Direita do padding*/
+            padding-bottom: 10px; /*Baixo do padding*/
+            padding-left: 10px; /*Esquerda do padding*/
+            /*Simplificando a parte da "padding" fica:
+            padding: 10px 10x 10x 10x (Levando a ordem dos ponteiros do relógio. Se forem todas as medidas iguais, basta colocar apenas uma vez que a distância será para todas.*/
+
+            /*"MARGIM" Distancia do conteúdo de fora em relação a borda."*/
+            margin-top: 10px; /*Cima do margin*/
+            margin-right: 10px; /*Direita do margin*/
+            margin-bottom: 10px; /*Baixo do margin*/
+            margin-left: 10px; /*Esquerda do margin*/
+            /*Para deixar o box no centro utiliza-se "MARGIN: AUTO"*/  
+             /*Simplificando a parte da "margin" fica:
+            margin: 10px 10x 10x 10x (Levando a ordem dos ponteiros do relógio. Se forem todas as medidas iguais, basta colocar apenas uma vez que a distância será para todas.*/
+            
+            /*"OUTLINE" trata-se de uma linha que fica ldentro da "MARGIN."*/
+            outline-width: 5px; /*Largura da linha*/
+            outline-style: dashed; /*Estilo da linha*/
+            outline-color: red;
+            /*Simplificando a parte da "outline" fica:
+            moutline: 5px dashed red.*/
+        }
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo funciona.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+@charset "UTF-8";
+
+body{
+    background-color: rgb(178, 243, 162);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(25, 8, 255);
+}
+
+h1#Principal{ /*A utilização do caracterie "#" simboliza a ligação com o "ID" do HTML. Em HTML é ID = em CSS é #.*/
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+h2{
+    color: rgb(176, 30, 206);
+}
+
+.basico{ /*A utilização do caracterie "." simboliza a ligação com o "CLASS do HTML. Em HTML é CLASS = em CSS é ".".*/
+    color: rgb(15, 108, 214);
+}
+.intermediario{ /*Para utilizar o "CLASS" não é necessário especificar a tag, basca iniciar com o "." e, em seguida, digitar a classe.*/
+    color: rgb(118, 15, 214);
+}
+.avancado{
+    color: rgb(214, 194, 15);
+}
+
+.destaque{
+    background-color: rgba(41, 122, 192, 0.63);
+}

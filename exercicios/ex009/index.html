@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+        <h2>Listas Ordenadas</h2> <!-- Listas Ordenadas são aquelas em que a ordem faz diferença.-->
+        <ol type="1"> <!-- Para trabalhar com listas ordenadas, utilizamos a tag "OL"-->
+            <li>Acordar</li> <!-- Para todos os itens que farão parte da lista, os mesmo precisam estar entre as tags "LI"-->
+            <li>Ligar para o João</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a Faculdade</li>
+            <li>Almoçar</li>
+            <li>Ir para o trabalho</li>
+            <li>Voltar para casa</li>
+            <li>Jantar</li>
+            <li>Dormir</li>
+        </ol> <!-- Adicionando a tag "Type" dentro da tag "OL", podemos escolher o modo de marcador entre: 1, A, a, I, i. Adicionando "Start" podemos especificar exatamente de onde começa.-->
+    <h2>Listas não Ordenadas</h2> <!-- Listas não Ordenadas são aquelas em que a ordem não faz diferença.-->
+        <ul> <!-- Para trabalhar com listas não ordenadas, utilizamos a tag "UL"-->
+            <li>Pão</li> <!-- Para todos os itens que farão parte da lista, os mesmo precisam estar entre as tags "LI"-->
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul> <!-- Adicionando a tag "Type" dentro da tag "UL", podemos escolher o modo de marcador entre: circle, square e disc.-->
+    <h2>Minhas linguagens favoritas</h2>
+        <ol>
+            <li>Antigas</li> <!-- Segurando a tecla "ALT" pode ser feita uma marcação de vários cursores, para apagar letras em linhas diferentes de uma única vez.-->
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+        </ol>
+    <h2>Meu jogos favoritos</h2> <!-- Listas podem ser colocadas uma dentro da outra, listas ordenadas e listas não ordenadas.-->
+        <ol>
+            <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                    <ul type="circle">
+                        <li>Mario Bros 3</li>
+                        <li>Mario: Lost Levels</li>
+                    </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+        </ol>
+    <h2>Lista de definição</h2> <!-- Para usarmos uma lista de definição, utilizamos a tag "DL" Definition List-->
+        <dl>
+            <dt>HTML</dt> <!-- Termo da lista-->
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- Descrição da lista-->
+            <dt>CSS</dt> <!-- Termo da lista-->
+            <dd>Linguagem de marcação para a criação do design de um site.</dd> <!-- Descrição da lista-->
+            <dt>JavaScript</dt> <!-- Termo da lista-->
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd> <!-- Descrição da lista-->
+        </dl>
+</body>
+</html>

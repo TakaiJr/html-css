@@ -1,0 +1,32 @@
+@charset "UFT-8"
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left, #1C7A58, #84C2AB);
+}
+
+main{ /* Parte principal, onde se encontra o conteúdo*/
+    background-color: white;
+    box-shadow: 5px 5px 15px #0f4230a6; /* Esta tag serve para dar sombreamento, nerste caso, ao "main".*/
+    border-radius: 20px; /* Esta tag serve para arredondar as bordas.*/
+    width: 800px; /* largura da parte principal, onde de encontra o conteúdo*/
+    padding: 15px; /* Distancia da margem do conteúdo.*/
+    margin: auto; /* Esta tag deixa o conteúdo de "main" centralizado independente do tamanho da janela.*/
+}
+
+h1{
+    color: #C23717;
+    text-align: center; /* Deixar o texto centralizado*/
+    text-shadow: 1px 1px 2px #77220fce; /* Colocar sobra no texto. */
+}
+
+h2{
+    color: #751B07;
+}
+
+p{
+    text-align: justify;
+}

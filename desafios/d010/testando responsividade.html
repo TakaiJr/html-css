@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Responsividade</title>
+    <style>
+        body{
+            background-color: rgb(253, 0, 0);
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px; /*Tamanho de telas de celulares antigos.*/
+            max-width: 800px; /*Tamanho máximo mesmo em telas grandes.*/
+            margin: auto;
+        }
+
+        img{
+            width: 100%; /*Configuração para que a imagem fique em 100% da tela, e comece a diminuir a medida que a tela também diminui.*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro velit delectus asperiores illo sapiente odio odit magnam, eveniet nesciunt nisi. Architecto velit quos itaque obcaecati vero voluptatem magnam vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsum eos aliquam voluptatibus, distinctio molestiae accusamus nobis. Labore tempore autem quos! Earum ut ipsam iusto consectetur iure aut aperiam hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis cumque quas magni alias unde harum magnam quos. Corporis vel maiores quibusdam recusandae quisquam exercitationem voluptas nemo voluptatum voluptatibus ipsam?</p>
+        
+        
+        <picture> <!--Tag para adicionar mais de uma mídia.-->
+            <source media="(max-width:600px)" srcset="imagens/irina-blok-pq.jpg"> <!-- Seleciona a imagem pequena, e quando a tela atingir o máximo de 600px, a imagem maior é substituída por esta imagem menor.-->
+            <img src="imagens/irina-blok.jpg" alt="irina Blok"> <!--Imagem normal, maior, para se adaptar a telas grandes.-->
+        </picture>
+        
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro velit delectus asperiores illo sapiente odio odit magnam, eveniet nesciunt nisi. Architecto velit quos itaque obcaecati vero voluptatem magnam vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsum eos aliquam voluptatibus, distinctio molestiae accusamus nobis. Labore tempore autem quos! Earum ut ipsam iusto consectetur iure aut aperiam hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis cumque quas magni alias unde harum magnam quos. Corporis vel maiores quibusdam recusandae quisquam exercitationem voluptas nemo voluptatum voluptatibus ipsam?</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block; /* A tag "DISPLAY" certe para alinhar conteudos. "INLINE-BLOCK" serve para alinhar lado a lado na mesma linha.*/
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px; /*A tag "HEIGHT" significa altura.*/
+            width: 200px; /*A tag "WIDTH" significa largura.*/
+        }
+
+        div:hover{ /*Pseudo classes servem para marcar o estado de uma determinada marcação. A tag "HOVER" é o estado de "passar o mouse", ou seja, ficará yellow somente quando o cursor do mouse estiver sobre a DIV.*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>01</div> <!-- A tag "DIV" são divisões que ocupam uma linha inteira, de lado a lado da tela.-->
+    <div>02</div>
+    <div>03</div>
+</body>
+</html>

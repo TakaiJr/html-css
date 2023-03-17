@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- Link externo aponta para outro site.-->
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/">repositório público no GitHub</a></p> <!-- Para adionar um link externo, usamos a tag "A" de âncora-->
+        <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube</a></p> <!-- TARGET="_BLANK" siginifica que o link será aberto em uma kanela em branco (aba). REL="EXTERNAL" é a referência de que o link será externo.-->
+    <h1>Usando links internos</h1> <!-- Faz o direcionamento para uma página que faz parte do meu próprio site.-->
+        <p>Esta é a primeira página do site. Se você quiser, pode acessar também minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p> <!-- Para links internos, usamos o nome do arquivo, que está na mesma pasta do arquivo original, dentro da tag "A" e usamos "CTRL+SPACE" para selecionar o aquivo.-->
+        <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p> <!-- Para adicionar páginas em que o arquivo não esteja na mesma página que o original, utilizamos o caminho completo do arquivo. Utilizamos o "TARGET=_SELF" para identificar que a nova página não será aberta em uma nova aba.-->
+    <h1>Links para downloads</h1> <!-- Para fazer downloads de itens, também usamos a tag "A", pastando apenas especificar o item que deseja que seja baixado.-->
+        <ul>
+            <li><a href="livro/guia_de_estudos.pdf" download="guia_de_estudos.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- "DOWNLOAD=" dentro da tag "A" especifica o nome do arquivo que será baixado. "TYPE=" especifica o formato do arquivo que será baixado.-->
+            <li><a href="livro/guia_de_estudos.rar" download="guia_de_estudos.rar" type="application/zip">Baixar o livro compactado em RAR </a></li> <!-- para saber qual "TYPE=" utilizar, visite: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+        </ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        <picture> <!-- Funciona para adicionar uma imagem, onde o HTML irá escolher qual melhor se ajusta.-->
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- "SOUCE:MEDIA:TYPE serve para adicionar as imagens de diferentes tamanhos para os ajustes acontecerem. Deixar no tamanho uma folga em PIXEL para evitar a barra de rolagem lateral. Ao adicionar a tag, altere o "MIN" para "MAX", fica melhor para trabalhar.-->
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Por ordem de organização, a menor imagem precisa esta por cima, em ordem crescente da menor para a maior.-->
+            <img src="imagens/foto-g.png" alt="Imagem flexivel"> <!-- A imagem base deve ser a última, e as menores devem está logo acima para os ajustes acontecerem.-->
+        </picture>
+    <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio src="midia/happy-mistake.mp3" controls autoplay></audio> <!-- A maneira mais simples de se adicionar áudio é usando a tag "AUDIO", use os parametros "CONTROLS" para aparecer o painel de controle do áudio e "AUTOPLAY" paras inicio imediato do audio.-->
+        <audio preload="metadata" autoplay controls loop> 
+            <!-- "PRELOAD" tem três opções: "AUTO", onde a página só carrega depois que o audio inteiro é baixado. "METADATA", é o recomendado, pois o arquivo de áudio vai sendo baixado aos poucos e sendo carregado. "NONE", onde o arquivo de áudio só será carregado depois que o usuário der play.-->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- Os formatos de áudio suportados em navegadores são: MP3, OGG e WAV.-->
+            <source src="midia/guanacast-33.ogg" type="audio/ogg"> <!-- A tag "SOURCE:SRC" serve para carregar áudio e o esquema da ordem do "SOURCE" segue o mesmo da imagem dinâmica.-->
+            <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Evite usar aquivos WAV, são muito pesados. Se o navegador não reproduzir nenhum dos três tipo, infelizmente o áudio não carrega. Deixe a mensagem informando.-->
+            <p>Infelizmente o seu navegador nbão consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        </audio>
+</body>
+</html>
